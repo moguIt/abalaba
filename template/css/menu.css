@@ -1,0 +1,72 @@
+#menuVertical {
+    width:100%;
+    height:auto;
+}
+
+#menuVertical ul {
+    display:block;
+    width: max-content;
+    height:auto;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    position:relative;
+}
+
+#menuVertical ul li {
+    display:block;
+    height:auto;
+    position:relative;
+}
+
+#menuVertical ul li ul li {
+    width: max-content;
+}
+
+#menuVertical ul li a {
+    position:relative;
+    display:block;
+    height:auto;
+    box-sizing:border-box;
+    font-size:13px;
+    text-transform: uppercase;
+    font-weight:700;
+    color:#FE980F;
+    line-height:1.2em;
+    padding:10px 15px;
+    text-decoration:none;
+}
+
+#menuVertical ul  li:first-child a {
+    border:0px;
+}
+
+#menuVertical ul li a:hover, #menuVertical ul li:hover a {
+    background-color: #FE980F;
+    color: white;
+}
+
+#menuVertical ul li ul {
+    position:absolute;
+    top:0px;
+    left:100%;
+    display:none;
+    width:auto;
+}
+
+/*******показываем выпадашку при наведении ********/
+
+#menuVertical ul li:hover ul {
+    display:block;
+}
+
+#menuVertical ul li ul li a {
+    white-space:nowrap;
+    text-transform:uppercase;
+    padding: 10px 20px;
+    height: 35px;
+}
+
+#menuVertical ul li ul li a:hover {
+    border: 2px solid white;
+}
